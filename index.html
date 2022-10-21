@@ -30,9 +30,9 @@
              </div>
         </div>
         <ul class="thumb">
-            <li><img src="img/thumb1.png" onclick="imgSlider()"></li>
-            <li><img src="img/thumb2.png" onclick="imgSlider('img2.png')"></li>
-            <li><img src="img/thumb3.png" onclick="imgSlider('img3.png')"></li>
+            <li><img src="img/thumb1.png" data-img="img/img1.png"></li>
+            <li><img src="img/thumb2.png" data-img="img/img2.png"></li>
+            <li><img src="img/thumb3.png" data-img="img/img3.png"></li>
         </ul>
         <ul class="sci">
             <li><a href="#"><img src="img/facebook.png"></a></li>
@@ -40,11 +40,5 @@
             <li><a href="#"><img src="img/instagram.png"></a></li>
         </ul>
     </section>
-
-    <script type="text/javascript">
-        function imgSlider(anything){
-            document.querySelector('starbucks').src = anything; 
-        }
-    </script>
 </body>
 </html>
