@@ -2,9 +2,10 @@
 <html lang="sp">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starbucks</title>
+    <title> Responsive Starbucks</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +13,8 @@
         <div class="circle"></div>
         <header>
             <a href="#" class="logo"><img src="img/logo.png"></a>
-            <ul>
+            <div class="toggle" onclick="toggleMenu()";></div>
+            <ul class="navigation">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Menu</a></li>
                 <li><a href="#">What's Newc</a></li>
@@ -47,6 +49,12 @@
         function changeCircleColor(color){
             const circle = document.querySelector('.circle');
             circle.style.background = color;
+        }
+        function toggleMenu(){
+            var manuToggle = document.querySelector('.toggle');
+            var navigation =document.querySelector('.navigation')
+            manuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
         }
     </script>
 </body>
